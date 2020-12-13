@@ -84,7 +84,7 @@ Springboot 에서는 bean을 통상 2번 등록합니다.
 
 - `@Configuration`
   
-- Bean을 등록하는 java 설정 파일
+  - Bean을 등록하는 java 설정 파일
   
 - `@ConfigurationProperties`
 
