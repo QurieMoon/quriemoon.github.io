@@ -1,6 +1,6 @@
 ---
 title: "[강의 내용 정리] <<스프링 부트 개념과 활용>> - 의존성 관리, 자동설정"
-date: 2020-12-13
+date: 2020-12-27
 category: spring-boot-basics
 tags:
 - spring-boot
