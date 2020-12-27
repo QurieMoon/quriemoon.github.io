@@ -60,7 +60,7 @@ tags:
 
    - 패키징된 스프링부트 jar 파일 압축을 풀어보면, 아래와 같은 구조를 확인할 수 있습니다.
 
-     ![img](http://wiki.sys4u.co.kr/download/attachments/10585052/image2019-9-20_10-56-46.png?version=1&modificationDate=1568944606000&api=v2)
+     ![springboot-jar-hierarchy]({{site.url}}/assets/images/post_images/spring-boot-basics-baek/springboot-jar-hierarchy.png)
 
    - 위 구조에서 `BOOT-INF/classes` 에는 애플리케이션 클래스가, `BOOT-INF/lib` 에는 프로젝트에서 사용하는 라이브러리들이 위치한 걸 확인할 수 있습니다.
 
@@ -75,8 +75,7 @@ tags:
 
 ------
 
-#####참고/인용 자료
+**참고/인용 자료**
 
-#####- [spring-boot-maven-plugin의 역할](http://wiki.sys4u.co.kr/pages/viewpage.action?pageId=10585052)
-
-- 본문에 등장한 jar 파일 구조 사진 자료도 위 링크에서 가져왔습니다.
+- [spring-boot-maven-plugin의 역할](http://wiki.sys4u.co.kr/pages/viewpage.action?pageId=10585052)
+  - 본문에 등장한 jar 파일 구조 사진 자료도 위 링크에서 다운로드한 자료입니다.
