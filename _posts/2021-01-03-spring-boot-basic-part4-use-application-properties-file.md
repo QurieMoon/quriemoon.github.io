@@ -10,7 +10,7 @@ tags:
 
  현재 수강중인 백기선 님의 [&laquo;스프링 부트 개념과 활용&raquo;](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8/dashboard) 강의 내용을 정리하고 있습니다.
 
-####application.properties 설정 파일에 있는 값 활용하기
+#### application.properties 설정 파일에 있는 값 활용하기
 
 application.properties 설정 파일에 있는 값을 불러올 때, 종종 아래와 같이 `@Value` 어노테이션을 활용하여, 불러옵니다.
 
