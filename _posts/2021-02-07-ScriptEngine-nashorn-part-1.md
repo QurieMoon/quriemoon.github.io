@@ -20,7 +20,7 @@ tags:
 
 -------
 
-####`ScriptEngine(Nashorn)`이란
+#### `ScriptEngine(Nashorn)`이란
 
 `ScriptEngine` 은 `javax.script` 패키지 내 있는 인터페이스로, scripting language 사용을 위한 기본적인 인터페이스이다.
 
@@ -47,7 +47,7 @@ tags:
 
   - 관련 튜토리얼: [Java 8 Nashorn Tutorial](https://winterbe.com/posts/2014/04/05/java8-nashorn-tutorial/)
 
-####javascript 변수 scope 문제 재현
+#### javascript 변수 scope 문제 재현
 
  스프링부트 어플리케이션에서 ScriptEngine을 통해서 javascript를 실행하던 중 javascript 변수가 엉뚱하게 공유되고 있는 문제를 발견했다.
 
@@ -155,7 +155,7 @@ tags:
 
     > 참고 링크: [자바스크립트 변수(var, let, const)와 스코프(function vs block) - FE study5](https://velog.io/@kimtaeeeny/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%B3%80%EC%88%98var-let-const%EC%99%80-%EC%8A%A4%EC%BD%94%ED%94%84function-vs-block-FE-study6)
 
-####javascript 변수 scope 문제 해결방법
+#### javascript 변수 scope 문제 해결방법
 
 위에서 서술한 문제를 해결하기 위해서 아래 두가지 방법을 찾아보았다.
 
