@@ -28,7 +28,7 @@ tags:
 
  그렇다면 `ScriptEngine` 의 역할은 무엇일까?  `ScriptEngine` 은 scripting code와 해당 코드를 실제로 실행하는 interpreter/compiler 사이에 있는 중간다리 역할을 한다. 
 
-![ScriptEngine-overall-process](({{site.url}}/assets/images/post_images/work/script_engine_overall_process.png))
+![ScriptEngine-overall-process]({{site.url}}/assets/images/post_images/work/script_engine_overall_process.png)
 
 `ScriptEngine` 이라는 인터페이스를 사용함으로써, 각 script language의 interpreter가 해당 코드 실행을 위해서 어떤 클래스를 사용하는지에 대한 세부정보는 추상화되어 최종 사용자에게 보이지 않는다.
 
