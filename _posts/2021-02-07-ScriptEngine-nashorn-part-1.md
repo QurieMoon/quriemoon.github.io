@@ -9,14 +9,7 @@ tags:
 - javascript
 ---
 
- 스프링부트 어플리케이션에서 간단한 javascript 코드 실행을 위해서 `ScriptEngine(Nashorn)` 을 사용하고 있다. 그러던 중 아래 두가지 문제를 발견했다.
-
-- javascript `var` 변수 scope 문제
-- OutOfMemory(OOM) - MetaSpace 문제
-
- 이번 글에서는 `ScriptEngine(Nashorn)`에 대한 간단한 소개와 함께, 위 두가지 문제 중 **javascript `var` 변수 scope 문제**
-
-를 다뤄보려고 한다.
+ java application에서 javascript 코드 실행 시, 사용하는 `ScriptEngine(Nashorn)` 에 대한 간단한 소개와 함께,  `ScriptEngine` 사용 중 발견한 **javascript `var` 변수 scope 문제**를 다뤄보려고 한다.
 
 -------
 
