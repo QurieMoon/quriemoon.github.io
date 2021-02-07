@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-15T15:44:27+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">curious Q’s</title><subtitle>Tech, notes, etc</subtitle><author><name>Qurie Moon</name><email>quriemoon@gmail.com</email></author><entry><title type="html">글또 5기 다짐글</title><link href="http://localhost:4000/%EA%B8%80%EB%98%90/geulddo5-start/" rel="alternate" type="text/html" title="글또 5기 다짐글" /><published>2020-11-14T00:00:00+09:00</published><updated>2020-11-14T00:00:00+09:00</updated><id>http://localhost:4000/%EA%B8%80%EB%98%90/geulddo5-start</id><content type="html" xml:base="http://localhost:4000/%EA%B8%80%EB%98%90/geulddo5-start/">&lt;p&gt;이번 11월부터 글또 5기에 참여하게 되었습니다. 이에 첫번째 글로 다짐글을 쓰려고 합니다. 다짐글을 쓰려니 괜히 쑥스러운 마음도 들고, 용두사미가 되지 않을까 하는 걱정이 모락모락 피어오릅니다. 그렇지만 다짐글을 쓰면서 이번 글또 5기 활동 계획을 다시 정리하고, 본격적인 글또 5기 활동을 시작하겠습니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;글또 5기 활동 목표&lt;/li&gt;
+  &lt;li&gt;꾸준한 글쓰기&lt;/li&gt;
+  &lt;li&gt;피드백을 받음으로써, 글의 완성도 높이기&lt;/li&gt;
+  &lt;li&gt;글또 5기에서 하고싶은 글쓰기
+    &lt;ul&gt;
+      &lt;li&gt;주제
+        &lt;ul&gt;
+          &lt;li&gt;요즘 공부하고 있는 jpa와 «How linux works» 책 내용 정리&lt;/li&gt;
+          &lt;li&gt;시간이 가능하다면 최근에 시작한 kibana를 활용한 로그 분석에 대한 글도 정리&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;스타일
+        &lt;ul&gt;
+          &lt;li&gt;새로 알게된 내용, 중요하게 생각된 내용에 집중하는 글쓰기
+            &lt;ul&gt;
+              &lt;li&gt;처음에 개인 블로그에 스터디한 내용에 대한 포스팅을 시작했을 때, 그날 공부한 내용 전체 범위를 순차적으로 쭉 작성했습니다. 하지만, 이런 방식은 정리에 소요되는 시간에 비해서 정리되는 양도 많지 않고, 나중에 필요한 부분만 찾아서 보기가 어렵다는 문제점이 있었습니다. 따라서 이번에는 스터디를 하거나 업무를 하면서 새로 알게된 내용, 중요하게 생각된 내용에 집중하는 글쓰기를 하고 싶습니다.&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Qurie Moon</name><email>quriemoon@gmail.com</email></author><category term="글또" /><category term="글또" /><summary type="html">이번 11월부터 글또 5기에 참여하게 되었습니다. 이에 첫번째 글로 다짐글을 쓰려고 합니다. 다짐글을 쓰려니 괜히 쑥스러운 마음도 들고, 용두사미가 되지 않을까 하는 걱정이 모락모락 피어오릅니다. 그렇지만 다짐글을 쓰면서 이번 글또 5기 활동 계획을 다시 정리하고, 본격적인 글또 5기 활동을 시작하겠습니다.</summary></entry><entry><title type="html">Google Colab 환경에서 Google Drive 연동하기</title><link href="http://localhost:4000/colab/connect-to-gdrive/" rel="alternate" type="text/html" title="Google Colab 환경에서 Google Drive 연동하기" /><published>2019-04-29T00:00:00+09:00</published><updated>2019-04-29T00:00:00+09:00</updated><id>http://localhost:4000/colab/connect-to-gdrive</id><content type="html" xml:base="http://localhost:4000/colab/connect-to-gdrive/">&lt;p&gt;GPU가 없지만 딥러닝 모델을 학습시켜서 활용하고 싶거나 BERT와 같은 덩치가 큰 모델을 돌리고 싶을 때, GPU 장비와 같은 환경적인 조건이 갖추어져 있지 않아 시도조차 해보기 어려울 때가 종종 있다. 이때, 유용하게 사용할 수 있는 게 바로 Google Colab이다.&lt;/p&gt;
+
+&lt;p&gt;이 글에서는 Google Colab 사용법 중에 하나로, Google Drive와의 연동을 통한 Google Drive 데이터를 불러오는 법을 살펴보려고 한다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;이 글에서 등장하는 Google Drive 구조는 아래와 같다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/post_images/gdrive_sample_directory.png&quot; alt=&quot;gdrive_sample_directory&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;여기서 우리는 현재 작업 중인 위치를 ‘new_folder’로 설정한 후, 해당 폴더에 하위 항목(‘data’ 폴더, sample.txt) 를 이용하려고 한다.&lt;/p&gt;
+
+&lt;p&gt;다시  Colab으로 돌아와서, 구글 드라이브를 연동하기 전에 현재 작업 중인 위치와 접근 가능한파일을 살펴보면 아래와 같다.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pwd&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# pwd: 현재 작업 중인 위치를 알려준다.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# /content&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# ls: 현재 작업 중인 디렉토리 내에 있는 디렉토리 및 파일 출력&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# sample_data&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;아래 코드를 통해서 구글 드라이브를 연결해보자.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;마운트?&lt;/p&gt;
+
+  &lt;p&gt;컴퓨터 과학에서 저장 장치에 접근할 수 있는 경로를 디렉터리 구조에 편입시키는 작업을 말한다. (출처: 위키백과 - ‘마운트’)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;다음 코드를 실행하면, 결과창에 나오는 URL이 등장한다. 해당 URL을 클릭하여  authorization code를 복사해온 후, 입력창에 붙여넣자.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 구글 드라이브 연동
+&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os.path&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;google.colab&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;drive&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ROOT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;/content/gdrive&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;drive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ROOT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Go to this URL in a browser: https://accounts.google.com...
+&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Enter your authorization code:
+# ··········
+# Mounted at /content/gdrive
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;구글 드라이브와 연동을 마치고서 다시 현재 작업 중인 위치 및 세부 파일에 대한 정보를 확인해보자.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pwd&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# /content&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# gdrive sample_data&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;구글 드라이브를 연동한 후에는 현재 작업 중인 디렉토리 안에 ‘gdrive’ 라는 디렉토리가 보인다. 바로 이 ‘gdrive’ 를 이용해서 구글 드라이브 내 파일에 접근할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;세부 경로를 설정하기 전에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls&lt;/code&gt; 명령어를 이용하여 설정하려는 세부 경로가 맞는 경로인지 확인할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; /content/gdrive/&lt;span class=&quot;s1&quot;&gt;'My Drive'&lt;/span&gt;/new_folder
+&lt;span class=&quot;c&quot;&gt;# data sample.txt&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위 결과를 통해서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/content/gdrive/'My Drive'/new_folder&lt;/code&gt;라는 경로가 이 예제에서 설정하려는 경로가 맞다는 걸 확인했다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;팁: 디렉토리명에 ‘ ‘ (공백; white space) 가 포함된 경우, 하나의 디렉토리명이 공백을 기준으로 분리가 되어 에러가 발생할 수 있다. 이럴 경우, ‘ ‘으로 해당 디렉토리명을 묶어주면 된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;위 경로를 이용하여 우리가 이용할 프로젝트 경로 (주소)를 만들자.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;PROJ&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;My Drive/new_folder&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#에러 발생 시, 아래 PROJ 할당문 실행
+# PROJ = &quot;\'My Drive\'/new_folder&quot;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PROJECT_PATH&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ROOT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PROJ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 위에서 ROOT = &quot;/content/gdrive&quot;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;팁:  위에서 언급했듯이, 공백이 포함된 디렉토리명이 포함된 경로 입력 시, ‘ ‘가 필요할 수도 있다. 이때, 문자열 안에 다시 문자열을 입력해야하는 경우, 이스케이스 문자(\)를 쓰면 된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;새로 만든 프로젝트 주소를 이용할 수 있도록 경로에 추가하자.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;insert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PROJECT_PATH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;우리가 이용하려는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data&lt;/code&gt; 디렉토리와 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sample.txt&lt;/code&gt; 에 바로 접근할 수 있도록 new_folder 로 이동하자.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;%cd gdrive/&lt;span class=&quot;s1&quot;&gt;'My Drive'&lt;/span&gt;/new_folder
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pwd&lt;/code&gt; 명령어를 통해서 현재 작업 중인 위치가 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new_folder&lt;/code&gt; 로 바뀌었음을 알 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pwd&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# /content/gdrive/My Drive/new_folder&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이제 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pd.read_csv('sample.txt')&lt;/code&gt; 와 같이 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new_folder&lt;/code&gt; 에 있는 항목들에 바로 접근할 수 있다.&lt;/p&gt;</content><author><name>Qurie Moon</name><email>quriemoon@gmail.com</email></author><category term="Colab" /><category term="Colab" /><category term="Google_drive" /><summary type="html">GPU가 없지만 딥러닝 모델을 학습시켜서 활용하고 싶거나 BERT와 같은 덩치가 큰 모델을 돌리고 싶을 때, GPU 장비와 같은 환경적인 조건이 갖추어져 있지 않아 시도조차 해보기 어려울 때가 종종 있다. 이때, 유용하게 사용할 수 있는 게 바로 Google Colab이다.</summary></entry></feed>

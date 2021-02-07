@@ -26,10 +26,10 @@ codekit-config.json
 .jekyll-metadata
 .sass-cache
 _asset_bundler_cache
-_site
+#_site
 
 ### Jekyll ###
-_site
+#_site
 .jekyll-metadata
 *-cache/
 
