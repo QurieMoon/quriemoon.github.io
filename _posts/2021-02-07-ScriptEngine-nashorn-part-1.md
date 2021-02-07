@@ -1,5 +1,5 @@
 ---
-title: "ScriptEngine(Nashorn) 내 javascript 변수 사용 유의점"
+title: "ScriptEngine(Nashorn) 내 javascript var 변수 사용 시, 유의점"
 date: 2021-02-07
 category: work
 tags:
@@ -11,10 +11,10 @@ tags:
 
  스프링부트 어플리케이션에서 간단한 javascript 코드 실행을 위해서 `ScriptEngine(Nashorn)` 을 사용하고 있다. 그러던 중 아래 두가지 문제를 발견했다.
 
-- javascript 변수 scope 문제
+- javascript `var` 변수 scope 문제
 - OutOfMemory(OOM) - MetaSpace 문제
 
- 이번 글에서는 `ScriptEngine(Nashorn)`에 대한 간단한 소개와 함께, 위 두가지 문제 중 **javascript 변수 scope 문제**
+ 이번 글에서는 `ScriptEngine(Nashorn)`에 대한 간단한 소개와 함께, 위 두가지 문제 중 **javascript `var` 변수 scope 문제**
 
 를 다뤄보려고 한다.
 
@@ -29,6 +29,8 @@ tags:
  그렇다면 `ScriptEngine` 의 역할은 무엇일까?  `ScriptEngine` 은 scripting code와 해당 코드를 실제로 실행하는 interpreter/compiler 사이에 있는 중간다리 역할을 한다. 
 
 ![ScriptEngine-overall-process]({{site.url}}/assets/images/post_images/work/script_engine_overall_process.png)
+
+> [Introducing the Java scripting API - Use the javax.script API to change a running application, IBM](https://www.ibm.com/developerworks/library/j-javascripting1/index.html#artrelatedtopics) 의 Figure 1: Scripting API component relationships 참고
 
 `ScriptEngine` 이라는 인터페이스를 사용함으로써, 각 script language의 interpreter가 해당 코드 실행을 위해서 어떤 클래스를 사용하는지에 대한 세부정보는 추상화되어 최종 사용자에게 보이지 않는다.
 
@@ -149,7 +151,7 @@ tags:
     Agent_A 293
     ```
 
-    javascript 내 for-loop에서 변수 `i`를 초기화했지만, 의도했던 결과가 나오지 않았다. 이는 javascript에서 var keyword의 scope 때문에 발생하는 문제이다.
+    javascript 내 for-loop에서 변수 `i`를 초기화했지만, 의도했던 결과가 나오지 않았다. 이는 javascript에서 `var` keyword의 scope 때문에 발생하는 문제이다.
 
     javascript에서 var 키워드의 경우, 함수 외부에서 선언한 변수가 모두 전역 변수로 취급되기 때문에 위 `i` 변수도 공유된다.
 
