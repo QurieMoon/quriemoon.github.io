@@ -1,0 +1,10 @@
+/* 레거시(Chirpy) 글의 <div class="notice"> 박스 스타일 */
+.post-content .notice {
+  margin: 1.2rem 0;
+  padding: 0.8rem 1rem;
+  border-left: 4px solid var(--tertiary);
+  background: var(--code-bg);
+  border-radius: var(--radius);
+}
+.post-content .notice p { margin: 0.4rem 0; }
+.post-content img { display: block; margin: 1rem auto; }

@@ -1,7 +1,7 @@
 baseURL: "https://quriemoon.github.io/"
-languageCode: ko-KR
+locale: ko-KR
 defaultContentLanguage: ko
-title: "quriemoon's Blog"
+title: "curious Q's"
 theme: PaperMod
 
 pagination:
@@ -11,14 +11,19 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true   # 기존 글의 <div class="notice"> 등 raw HTML 허용
+
 minify:
   disableXML: true
   minifyOutput: true
 
 params:
   env: production
-  title: "quriemoon's Blog"
-  description: "공부하고 기록하는 개인 블로그"
+  title: "curious Q's"
+  description: "촘촘한 나뭇잎에 가려진 숲을 보려고 노력합니다."
   author: "quriemoon"
   defaultTheme: auto
   ShowReadingTime: true
@@ -32,7 +37,7 @@ params:
 
   homeInfoParams:
     Title: "안녕하세요 👋"
-    Content: "공부하고 기록하는 개인 블로그입니다."
+    Content: "촘촘한 나뭇잎에 가려진 숲을 보려고 노력합니다."
 
   socialIcons:
     - name: github
