@@ -1,0 +1,73 @@
+baseURL: "https://quriemoon.github.io/"
+languageCode: ko-KR
+defaultContentLanguage: ko
+title: "quriemoon's Blog"
+theme: PaperMod
+
+pagination:
+  pagerSize: 10
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "quriemoon's Blog"
+  description: "공부하고 기록하는 개인 블로그"
+  author: "quriemoon"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: false
+  disableSpecial1stPost: false
+
+  homeInfoParams:
+    Title: "안녕하세요 👋"
+    Content: "공부하고 기록하는 개인 블로그입니다."
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/quriemoon"
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 40
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON   # 검색(Fuse.js)에 필요
