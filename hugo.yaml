@@ -15,6 +15,12 @@ markup:
   goldmark:
     renderer:
       unsafe: true   # 기존 글의 <div class="notice"> 등 raw HTML 허용
+    extensions:
+      passthrough:   # 수식 ($$...$$ 블록, \(...\) 인라인) 은 KaTeX 로 렌더링
+        enable: true
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)']]
 
 minify:
   disableXML: true
@@ -37,7 +43,7 @@ params:
 
   homeInfoParams:
     Title: "안녕하세요 👋"
-    Content: "촘촘한 나뭇잎에 가려진 숲을 보려고 노력합니다."
+    Content: "촘촘한 나뭇잎에 가려진 숲을 보려고 노력합니다. 통계학과 컴퓨터과학을 활용하여, 숫자 속에 숨겨진 현상을 발견하는 데이터 분석가가 되려고 합니다."
 
   socialIcons:
     - name: github
@@ -58,6 +64,10 @@ menu:
       name: Posts
       url: /posts/
       weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 15
     - identifier: archives
       name: Archives
       url: /archives/
